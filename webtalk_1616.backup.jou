@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Jan 06 05:46:41 2020
+# Process ID: 1616
+# Current directory: C:/Users/zjd/police
+# Command line: wbtcv.exe -mode batch -source C:/Users/zjd/project_1/project_1.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/zjd/police/webtalk.log
+# Journal file: C:/Users/zjd/police\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/zjd/project_1/project_1.hw/webtalk/labtool_webtalk.tcl -notrace

@@ -1,0 +1,234 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+Process ID: 24212
+
+Current time: 	1/7/20 1:00:39 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	E:/shuziluoji/Xilinx/Vivado/2016.2/tps/win64/jre
+
+User name: 	zjd
+User home directory: C:/Users/zjd
+User working directory: C:/Users/zjd/police
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI Base root directory: E:/shuziluoji/Xilinx/Vivado
+RDI Data directory: E:/shuziluoji/Xilinx/Vivado/2016.2/data
+RDI Bin directory: E:/shuziluoji/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: C:/Users/zjd/AppData/Roaming/Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: C:/Users/zjd/AppData/Roaming/Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	219 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 439 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 32 MB (+31566kb) [00:00:08]
+// [Engine Memory]: 405 MB (+272857kb) [00:00:08]
+// Opening Vivado Project: C:\Users\zjd\police\police.xpr. Version: Vivado v2016.2 
+// bL:g (cv:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/zjd/police/police.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 45 MB (+11638kb) [00:00:12]
+// [Engine Memory]: 471 MB (+48081kb) [00:00:12]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 509 MB (+15849kb) [00:00:14]
+// [GUI Memory]: 91 MB (+45114kb) [00:00:18]
+// [Engine Memory]: 656 MB (+126826kb) [00:00:18]
+// [Engine Memory]: 713 MB (+25292kb) [00:00:18]
+// [GUI Memory]: 97 MB (+2152kb) [00:00:20]
+// [Engine Memory]: 750 MB (+1425kb) [00:00:22]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/zjd/police/police.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/shuziluoji/Xilinx/Vivado/2016.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 800 MB. GUI used memory: 55 MB. Current time: 1/7/20 1:00:53 PM CST
+// [Engine Memory]: 800 MB (+13590kb) [00:00:25]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: police; location: C:/Users/zjd/police; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:21 . Memory (MB): peak = 1029.301 ; gain = 346.293 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 59 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 5); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 8); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 9); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v)]", 1); // z:k (G:JPanel, cv:JFrame)
+// PAPropertyPanels.initPanels (mouse.v) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), mymouse - mouse (mouse.v)]", 5, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), mymouse - mouse (mouse.v)]", 5, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 16 seconds
+selectCodeEditor("mouse.v", 279, 242); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("mouse.v", 282, 250); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 50 seconds
+selectCodeEditor("mouse.v", 175, 286); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), vga - vga_sync (vga_sync.v)]", 3, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), sirens - siren (siren.v)]", 8); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), sirens - siren (siren.v), divider - Divider (Devider.v)]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), sirens - siren (siren.v), divider - Divider (Devider.v)]", 9, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), sirens - siren (siren.v)]", 8, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), sirens - siren (siren.v)]", 8, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+selectCodeEditor("siren.v", 213, 164); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 207, 164); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 215, 163); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 195, 162); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 202, 175); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 210, 159); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 287, 162); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 224, 199); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 166, 208); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 155 seconds
+selectCodeEditor("siren.v", 357, 174); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 191, 195); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 47 seconds
+selectCodeEditor("siren.v", 199, 219); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("siren.v", 349, 215); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 361, 240); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 361, 247); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 220, 213); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 102 seconds
+selectCodeEditor("siren.v", 273, 207); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 285, 216); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 356, 217); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("siren.v", 364, 219); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 102 MB (+36kb) [00:10:59]
+// [GUI Memory]: 108 MB (+463kb) [00:15:50]
+// Elapsed time: 413 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Elapsed time: 12 seconds
+selectCodeEditor("mouse.v", 126, 234); // bH:N (JPanel:JComponent, cv:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // i:l (JPanel:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bL:g (cv:JFrame):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2016.2   **** Build date : Jun  2 2016-16:57:03     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1029.301 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292709808A 
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/zjd/police/police.runs/impl_1/police_top.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 876 MB (+37318kb) [00:16:59]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bL:g (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 879 MB. GUI used memory: 71 MB. Current time: 1/7/20 1:17:31 PM CST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // i:l (JPanel:JComponent, cv:JFrame)
+selectMenuItem((HResource) null, "xc7a100t_0"); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// PAPropertyPanels.initPanels (xc7a100t_0) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// aW:ak (cv:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, aW:ak)
+// bL:g (cv:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aW:ak (cv:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/zjd/police/police.runs/impl_1/police_top.bit} [lindex [get_hw_devices] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'A' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bL:g (cv:JFrame)
+// Elapsed time: 368 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_FILESET_WINDOW, "Sources"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_FILESET_WINDOW
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v)]", 4); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), score - score (score.v)]", 10, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), score - score (score.v)]", 10, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 293 seconds
+selectCodeEditor("score.v", 483, 306, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectCodeEditor("score.v", 425, 204); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("score.v", 207, 251, false, false, false, true, false); // bH:N (JPanel:JComponent, cv:JFrame) - Popup Trigger
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Devider.v", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), time_text - time_text (time_text.v)]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), font_unit - font_rom (font_rom.v)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), font_unit - font_rom (font_rom.v)]", 6, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), font_unit - font_rom (font_rom.v)]", 6, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), title - title (title.v)]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), title - title (title.v)]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), title - title (title.v)]", 7, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 114 MB (+1026kb) [00:29:47]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), paratitle - paratitle (paratitle.v)]", 8, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, police_top (police_top.v), display - vga_display (vga_display.v), texts - text (text.v), paratitle - paratitle (paratitle.v)]", 8, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 120 MB (+505kb) [00:44:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 885 MB. GUI used memory: 74 MB. Current time: 1/7/20 1:47:31 PM CST

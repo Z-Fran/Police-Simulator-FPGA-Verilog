@@ -1,0 +1,1144 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Jan 07 08:32:07 2020
+# Process ID: 19824
+# Current directory: C:/Users/zjd/police/police.runs/synth_1
+# Command line: vivado.exe -log police_top.vds -mode batch -messageDb vivado.pb -notrace -source police_top.tcl
+# Log file: C:/Users/zjd/police/police.runs/synth_1/police_top.vds
+# Journal file: C:/Users/zjd/police/police.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source police_top.tcl -notrace
+Command: synth_design -top police_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10080 
+WARNING: [Synth 8-976] speaker_on has already been declared [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:15]
+WARNING: [Synth 8-2654] second declaration of speaker_on ignored [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:15]
+INFO: [Synth 8-994] speaker_on is declared here [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:14]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 316.715 ; gain = 110.020
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'police_top' [C:/Users/zjd/police/police.srcs/sources_1/new/police_top.v:7]
+INFO: [Synth 8-638] synthesizing module 'game_state' [C:/Users/zjd/police/police.srcs/sources_1/new/game_state.v:7]
+INFO: [Synth 8-226] default block is never used [C:/Users/zjd/police/police.srcs/sources_1/new/game_state.v:23]
+INFO: [Synth 8-256] done synthesizing module 'game_state' (1#1) [C:/Users/zjd/police/police.srcs/sources_1/new/game_state.v:7]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/zjd/police/police.srcs/sources_1/new/vga_sync.v:6]
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+	Parameter h_s bound to: 96 - type: integer 
+	Parameter h_b bound to: 16 - type: integer 
+	Parameter h_d bound to: 640 - type: integer 
+	Parameter h_f bound to: 48 - type: integer 
+	Parameter v_s bound to: 2 - type: integer 
+	Parameter v_b bound to: 33 - type: integer 
+	Parameter v_d bound to: 480 - type: integer 
+	Parameter v_f bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (2#1) [C:/Users/zjd/police/police.srcs/sources_1/new/vga_sync.v:6]
+INFO: [Synth 8-638] synthesizing module 'vga_display' [C:/Users/zjd/police/police.srcs/sources_1/new/vga_display.v:8]
+INFO: [Synth 8-638] synthesizing module 'text' [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:3]
+INFO: [Synth 8-638] synthesizing module 'font_rom' [C:/Users/zjd/police/police.srcs/sources_1/new/font_rom.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/zjd/police/police.srcs/sources_1/new/font_rom.v:51]
+INFO: [Synth 8-256] done synthesizing module 'font_rom' (3#1) [C:/Users/zjd/police/police.srcs/sources_1/new/font_rom.v:36]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:30]
+INFO: [Synth 8-638] synthesizing module 'title' [C:/Users/zjd/police/police.srcs/sources_1/new/title.v:23]
+	Parameter text_l bound to: 64 - type: integer 
+	Parameter text_t bound to: 10 - type: integer 
+	Parameter max_x bound to: 192 - type: integer 
+	Parameter max_y bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'title' (4#1) [C:/Users/zjd/police/police.srcs/sources_1/new/title.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:31]
+INFO: [Synth 8-638] synthesizing module 'paratitle' [C:/Users/zjd/police/police.srcs/sources_1/new/paratitle.v:23]
+	Parameter text_l bound to: 6 - type: integer 
+	Parameter text_t bound to: 84 - type: integer 
+	Parameter max_x bound to: 288 - type: integer 
+	Parameter max_y bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'paratitle' (5#1) [C:/Users/zjd/police/police.srcs/sources_1/new/paratitle.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:32]
+INFO: [Synth 8-638] synthesizing module 'time_text' [C:/Users/zjd/police/police.srcs/sources_1/new/time_text.v:23]
+	Parameter text_l bound to: 6 - type: integer 
+	Parameter text_t bound to: 410 - type: integer 
+	Parameter max_x bound to: 288 - type: integer 
+	Parameter max_y bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'time_text' (6#1) [C:/Users/zjd/police/police.srcs/sources_1/new/time_text.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:33]
+INFO: [Synth 8-638] synthesizing module 'score' [C:/Users/zjd/police/police.srcs/sources_1/new/score.v:23]
+	Parameter text_l bound to: 6 - type: integer 
+	Parameter text_t bound to: 340 - type: integer 
+	Parameter max_x bound to: 288 - type: integer 
+	Parameter max_y bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'score' (7#1) [C:/Users/zjd/police/police.srcs/sources_1/new/score.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:34]
+INFO: [Synth 8-638] synthesizing module 'siren1' [C:/Users/zjd/police/police.srcs/sources_1/new/siren1.v:23]
+	Parameter text_l bound to: 32 - type: integer 
+	Parameter text_t bound to: 160 - type: integer 
+	Parameter max_x bound to: 96 - type: integer 
+	Parameter max_y bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'siren1' (8#1) [C:/Users/zjd/police/police.srcs/sources_1/new/siren1.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:35]
+INFO: [Synth 8-638] synthesizing module 'siren2' [C:/Users/zjd/police/police.srcs/sources_1/new/siren2.v:23]
+	Parameter text_l bound to: 160 - type: integer 
+	Parameter text_t bound to: 160 - type: integer 
+	Parameter max_x bound to: 96 - type: integer 
+	Parameter max_y bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'siren2' (9#1) [C:/Users/zjd/police/police.srcs/sources_1/new/siren2.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:36]
+INFO: [Synth 8-638] synthesizing module 'speaker' [C:/Users/zjd/police/police.srcs/sources_1/new/speaker.v:23]
+	Parameter text_l bound to: 38 - type: integer 
+	Parameter text_t bound to: 256 - type: integer 
+	Parameter max_x bound to: 224 - type: integer 
+	Parameter max_y bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'speaker' (10#1) [C:/Users/zjd/police/police.srcs/sources_1/new/speaker.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:37]
+INFO: [Synth 8-638] synthesizing module 'start_text' [C:/Users/zjd/police/police.srcs/sources_1/new/start_text.v:23]
+	Parameter text_l bound to: 384 - type: integer 
+	Parameter text_t bound to: 192 - type: integer 
+	Parameter max_x bound to: 160 - type: integer 
+	Parameter max_y bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_text' (11#1) [C:/Users/zjd/police/police.srcs/sources_1/new/start_text.v:23]
+WARNING: [Synth 8-387] label required on module instance [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:38]
+INFO: [Synth 8-638] synthesizing module 'game_over' [C:/Users/zjd/police/police.srcs/sources_1/new/game_over.v:45]
+	Parameter text_l bound to: 384 - type: integer 
+	Parameter text_t bound to: 192 - type: integer 
+	Parameter max_x bound to: 160 - type: integer 
+	Parameter max_y bound to: 64 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'game_over' (12#1) [C:/Users/zjd/police/police.srcs/sources_1/new/game_over.v:45]
+INFO: [Synth 8-256] done synthesizing module 'text' (13#1) [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:3]
+INFO: [Synth 8-638] synthesizing module 'cursor' [C:/Users/zjd/police/police.srcs/sources_1/new/cursor.v:9]
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter CURSOR_MAX_X bound to: 16 - type: integer 
+	Parameter CURSOR_MAX_Y bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cursor' (14#1) [C:/Users/zjd/police/police.srcs/sources_1/new/cursor.v:9]
+INFO: [Synth 8-638] synthesizing module 'road' [C:/Users/zjd/police/police.srcs/sources_1/new/road.v:8]
+	Parameter DEVIDE_LEFT bound to: 310 - type: integer 
+	Parameter DEVIDE_RIGHT bound to: 315 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'road' (15#1) [C:/Users/zjd/police/police.srcs/sources_1/new/road.v:8]
+INFO: [Synth 8-638] synthesizing module 'yellowline' [C:/Users/zjd/police/police.srcs/sources_1/new/yellowline.v:8]
+	Parameter line_left bound to: 461 - type: integer 
+	Parameter line_right bound to: 491 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'yellowline' (16#1) [C:/Users/zjd/police/police.srcs/sources_1/new/yellowline.v:8]
+INFO: [Synth 8-638] synthesizing module 'car' [C:/Users/zjd/police/police.srcs/sources_1/new/car.v:6]
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter CAR_MAX_X bound to: 64 - type: integer 
+	Parameter CAR_MAX_Y bound to: 128 - type: integer 
+	Parameter car_y_t bound to: 320 - type: integer 
+	Parameter car_y_b bound to: 447 - type: integer 
+	Parameter CAR_VELOCITY bound to: 3'b010 
+INFO: [Synth 8-256] done synthesizing module 'car' (17#1) [C:/Users/zjd/police/police.srcs/sources_1/new/car.v:6]
+INFO: [Synth 8-638] synthesizing module 'people' [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+	Parameter RANDOM bound to: 100000000 - type: integer 
+	Parameter XMIN bound to: 315 - type: integer 
+	Parameter YMIN bound to: 0 - type: integer 
+	Parameter XMAX bound to: 640 - type: integer 
+	Parameter YMAX bound to: 480 - type: integer 
+	Parameter H_VELOCITY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'people' (18#1) [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+INFO: [Synth 8-638] synthesizing module 'people__parameterized0' [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+	Parameter RANDOM bound to: 200000000 - type: integer 
+	Parameter XMIN bound to: 315 - type: integer 
+	Parameter YMIN bound to: 0 - type: integer 
+	Parameter XMAX bound to: 640 - type: integer 
+	Parameter YMAX bound to: 480 - type: integer 
+	Parameter H_VELOCITY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'people__parameterized0' (18#1) [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+INFO: [Synth 8-638] synthesizing module 'people__parameterized1' [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+	Parameter RANDOM bound to: 300000000 - type: integer 
+	Parameter XMIN bound to: 315 - type: integer 
+	Parameter YMIN bound to: 0 - type: integer 
+	Parameter XMAX bound to: 640 - type: integer 
+	Parameter YMAX bound to: 480 - type: integer 
+	Parameter H_VELOCITY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'people__parameterized1' (18#1) [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+INFO: [Synth 8-638] synthesizing module 'people__parameterized2' [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+	Parameter RANDOM bound to: 400000000 - type: integer 
+	Parameter XMIN bound to: 315 - type: integer 
+	Parameter YMIN bound to: 0 - type: integer 
+	Parameter XMAX bound to: 640 - type: integer 
+	Parameter YMAX bound to: 480 - type: integer 
+	Parameter H_VELOCITY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'people__parameterized2' (18#1) [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+INFO: [Synth 8-638] synthesizing module 'people__parameterized3' [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+	Parameter RANDOM bound to: 500000000 - type: integer 
+	Parameter XMIN bound to: 315 - type: integer 
+	Parameter YMIN bound to: 0 - type: integer 
+	Parameter XMAX bound to: 640 - type: integer 
+	Parameter YMAX bound to: 480 - type: integer 
+	Parameter H_VELOCITY bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'people__parameterized3' (18#1) [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:7]
+INFO: [Synth 8-256] done synthesizing module 'vga_display' (19#1) [C:/Users/zjd/police/police.srcs/sources_1/new/vga_display.v:8]
+INFO: [Synth 8-638] synthesizing module 'mouse' [C:/Users/zjd/police/police.srcs/sources_1/new/mouse.v:6]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter SEND_RESET bound to: 4'b0001 
+	Parameter WAIT_ACKNOWLEDGE1 bound to: 4'b0010 
+	Parameter WAIT_SELF_TEST bound to: 4'b0011 
+	Parameter WAIT_MOUSE_ID bound to: 4'b0100 
+	Parameter ENABLE_DATA_REPORT bound to: 4'b0101 
+	Parameter WAIT_ACKNOWLEDGE2 bound to: 4'b0110 
+	Parameter GET_DATA1 bound to: 4'b0111 
+	Parameter GET_DATA2 bound to: 4'b1000 
+	Parameter GET_DATA3 bound to: 4'b1001 
+INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [C:/Users/zjd/police/police.srcs/sources_1/new/mouse.v:46]
+INFO: [Synth 8-638] synthesizing module 'ps2_transmitter' [C:/Users/zjd/police/police.srcs/sources_1/new/ps2_transmitter.v:8]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter WAIT_IO bound to: 4'b0001 
+	Parameter DATA_IN bound to: 4'b0010 
+	Parameter DATA_OUT bound to: 4'b0011 
+	Parameter INITIALIZE bound to: 4'b0100 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/zjd/police/police.srcs/sources_1/new/ps2_transmitter.v:64]
+INFO: [Synth 8-256] done synthesizing module 'ps2_transmitter' (20#1) [C:/Users/zjd/police/police.srcs/sources_1/new/ps2_transmitter.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/zjd/police/police.srcs/sources_1/new/mouse.v:128]
+INFO: [Synth 8-256] done synthesizing module 'mouse' (21#1) [C:/Users/zjd/police/police.srcs/sources_1/new/mouse.v:6]
+INFO: [Synth 8-638] synthesizing module 'sound' [C:/Users/zjd/police/police.srcs/sources_1/new/sound.v:22]
+INFO: [Synth 8-256] done synthesizing module 'sound' (22#1) [C:/Users/zjd/police/police.srcs/sources_1/new/sound.v:22]
+INFO: [Synth 8-638] synthesizing module 'siren' [C:/Users/zjd/police/police.srcs/sources_1/new/siren.v:23]
+	Parameter cmd_cnt_max bound to: 4 - type: integer 
+	Parameter INITIALIZE bound to: 3'b000 
+	Parameter SEND_CMD bound to: 3'b001 
+	Parameter CHECK bound to: 3'b010 
+	Parameter DATA_SEND bound to: 3'b011 
+	Parameter RSET_OVER bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'Divider' [C:/Users/zjd/police/police.srcs/sources_1/new/Devider.v:23]
+	Parameter N bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider' (23#1) [C:/Users/zjd/police/police.srcs/sources_1/new/Devider.v:23]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/Users/zjd/police/police.runs/synth_1/.Xil/Vivado-19824-DESKTOP-KDKD7VR/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_1' (24#1) [C:/Users/zjd/police/police.runs/synth_1/.Xil/Vivado-19824-DESKTOP-KDKD7VR/realtime/blk_mem_gen_1_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (18) of module 'blk_mem_gen_1' [C:/Users/zjd/police/police.srcs/sources_1/new/siren.v:48]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [C:/Users/zjd/police/police.runs/synth_1/.Xil/Vivado-19824-DESKTOP-KDKD7VR/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_2' (25#1) [C:/Users/zjd/police/police.runs/synth_1/.Xil/Vivado-19824-DESKTOP-KDKD7VR/realtime/blk_mem_gen_2_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (18) of module 'blk_mem_gen_2' [C:/Users/zjd/police/police.srcs/sources_1/new/siren.v:49]
+INFO: [Synth 8-256] done synthesizing module 'siren' (26#1) [C:/Users/zjd/police/police.srcs/sources_1/new/siren.v:23]
+INFO: [Synth 8-256] done synthesizing module 'police_top' (27#1) [C:/Users/zjd/police/police.srcs/sources_1/new/police_top.v:7]
+WARNING: [Synth 8-3331] design siren has unconnected port mp3_SO
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[9]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[8]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[7]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[6]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[5]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[4]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[3]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[2]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[1]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[0]
+WARNING: [Synth 8-3331] design cursor has unconnected port pause
+WARNING: [Synth 8-3331] design cursor has unconnected port frame_refresh
+WARNING: [Synth 8-3331] design game_over has unconnected port clk
+WARNING: [Synth 8-3331] design game_over has unconnected port reset
+WARNING: [Synth 8-3331] design start_text has unconnected port clk
+WARNING: [Synth 8-3331] design start_text has unconnected port reset
+WARNING: [Synth 8-3331] design speaker has unconnected port clk
+WARNING: [Synth 8-3331] design speaker has unconnected port reset
+WARNING: [Synth 8-3331] design siren2 has unconnected port clk
+WARNING: [Synth 8-3331] design siren2 has unconnected port reset
+WARNING: [Synth 8-3331] design siren1 has unconnected port clk
+WARNING: [Synth 8-3331] design siren1 has unconnected port reset
+WARNING: [Synth 8-3331] design score has unconnected port reset
+WARNING: [Synth 8-3331] design score has unconnected port pause
+WARNING: [Synth 8-3331] design paratitle has unconnected port clk
+WARNING: [Synth 8-3331] design paratitle has unconnected port reset
+WARNING: [Synth 8-3331] design title has unconnected port clk
+WARNING: [Synth 8-3331] design title has unconnected port reset
+WARNING: [Synth 8-3331] design text has unconnected port enter
+WARNING: [Synth 8-3331] design vga_display has unconnected port RClick
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 361.375 ; gain = 154.680
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 361.375 ; gain = 154.680
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_1' instantiated as 'sirens/siren_1' [C:/Users/zjd/police/police.srcs/sources_1/new/siren.v:48]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'blk_mem_gen_2' instantiated as 'sirens/siren_2' [C:/Users/zjd/police/police.srcs/sources_1/new/siren.v:49]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/zjd/police/police.runs/synth_1/.Xil/Vivado-19824-DESKTOP-KDKD7VR/dcp/blk_mem_gen_2_in_context.xdc] for cell 'sirens/siren_2'
+Finished Parsing XDC File [C:/Users/zjd/police/police.runs/synth_1/.Xil/Vivado-19824-DESKTOP-KDKD7VR/dcp/blk_mem_gen_2_in_context.xdc] for cell 'sirens/siren_2'
+Parsing XDC File [C:/Users/zjd/police/police.runs/synth_1/.Xil/Vivado-19824-DESKTOP-KDKD7VR/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'sirens/siren_1'
+Finished Parsing XDC File [C:/Users/zjd/police/police.runs/synth_1/.Xil/Vivado-19824-DESKTOP-KDKD7VR/dcp_2/blk_mem_gen_1_in_context.xdc] for cell 'sirens/siren_1'
+Parsing XDC File [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc]
+WARNING: [Vivado 12-584] No ports matched 'car_left'. [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc:1]
+WARNING: [Vivado 12-584] No ports matched 'car_right'. [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'car_right'. [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'car_left'. [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'enter'. [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'enter'. [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc:14]
+Finished Parsing XDC File [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/police_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/zjd/police/police.srcs/constrs_1/new/police_xdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/police_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/police_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 664.813 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 664.813 ; gain = 458.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 664.813 ; gain = 458.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 664.813 ; gain = 458.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'wait_start_reg' into 'game_reset_reg' [C:/Users/zjd/police/police.srcs/sources_1/new/game_state.v:30]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "game_reset" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crash" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "pass" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "char_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "text_rgb" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "text_rgb" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "text_rgb" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:80]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:78]
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:80]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:78]
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:80]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:78]
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:80]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:78]
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:80]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/zjd/police/police.srcs/sources_1/new/people.v:78]
+INFO: [Synth 8-5545] ROM "display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ps2_transmitter'
+INFO: [Synth 8-5544] ROM "clock_in_negedge" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/zjd/police/police.srcs/sources_1/new/mouse.v:71]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/zjd/police/police.srcs/sources_1/new/mouse.v:71]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/zjd/police/police.srcs/sources_1/new/mouse.v:71]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mouse'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PS2_enable" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'siren'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/zjd/police/police.srcs/sources_1/new/font_rom.v:53]
+WARNING: [Synth 8-327] inferring latch for variable 'bit_addr_reg' [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:22]
+WARNING: [Synth 8-327] inferring latch for variable 'text_rgb_reg' [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_addr_reg' [C:/Users/zjd/police/police.srcs/sources_1/new/text.v:27]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                 WAIT_IO |                              001 |                             0001
+                 DATA_IN |                              010 |                             0010
+              INITIALIZE |                              011 |                             0100
+                DATA_OUT |                              100 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ps2_transmitter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+              SEND_RESET |                             0001 |                             0001
+       WAIT_ACKNOWLEDGE1 |                             0010 |                             0010
+          WAIT_SELF_TEST |                             0011 |                             0011
+           WAIT_MOUSE_ID |                             0100 |                             0100
+      ENABLE_DATA_REPORT |                             0101 |                             0101
+       WAIT_ACKNOWLEDGE2 |                             0110 |                             0110
+               GET_DATA1 |                             0111 |                             0111
+               GET_DATA2 |                             1000 |                             1000
+               GET_DATA3 |                             1001 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'mouse'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               RSET_OVER |                              000 |                              100
+              INITIALIZE |                              001 |                              000
+                   CHECK |                              010 |                              010
+               DATA_SEND |                              011 |                              011
+                SEND_CMD |                              100 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'siren'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 664.813 ; gain = 458.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 36    
+	   3 Input     10 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 7     
+	   3 Input      4 Bit       Adders := 7     
+	   2 Input      3 Bit       Adders := 9     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 19    
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 9     
+	                1 Bit    Registers := 50    
++---ROMs : 
+	                              ROMs := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 2     
+	  16 Input     16 Bit        Muxes := 7     
+	   5 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 4     
+	   2 Input     12 Bit        Muxes := 15    
+	  16 Input     12 Bit        Muxes := 69    
+	   5 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 19    
+	   6 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 3     
+	  10 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 8     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 8     
+	   6 Input      3 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 16    
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 43    
+	   5 Input      1 Bit        Muxes := 38    
+	   9 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module game_state 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 8     
+	   5 Input      5 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 1     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module font_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
++---ROMs : 
+	                              ROMs := 2     
+Module title 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+Module paratitle 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	  10 Input      7 Bit        Muxes := 1     
+Module time_text 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     27 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module score 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 3     
+Module siren1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+Module siren2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+Module speaker 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+Module start_text 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      7 Bit        Muxes := 1     
+Module game_over 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   6 Input      7 Bit        Muxes := 1     
+Module text 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 3     
+	   2 Input     12 Bit        Muxes := 4     
+	   9 Input      1 Bit        Muxes := 1     
+Module cursor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input      4 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 5     
+Module road 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+Module yellowline 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module car 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     12 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module people 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     12 Bit        Muxes := 12    
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module people__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     12 Bit        Muxes := 12    
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module people__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     12 Bit        Muxes := 12    
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module people__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     12 Bit        Muxes := 12    
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module people__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input     12 Bit        Muxes := 12    
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module vga_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 11    
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
+Module ps2_transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   5 Input     16 Bit        Muxes := 1     
+	   5 Input     11 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 22    
+Module mouse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 6     
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   6 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 9     
+	   5 Input     10 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	   6 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 2     
+Module sound 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module siren 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 664.813 ; gain = 458.117
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "people0/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people1/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people2/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people3/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people4/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "pass" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people4/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people3/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people2/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people1/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "people0/display" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3936] Found unconnected internal register 'mymouse/ps2_transmitter/data_in_buf_reg' and it is trimmed from '11' to '10' bits. [C:/Users/zjd/police/police.srcs/sources_1/new/ps2_transmitter.v:74]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/zjd/police/police.srcs/sources_1/new/mouse.v:71]
+WARNING: [Synth 8-3917] design police_top has port aud_on driven by constant 1
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[9]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[8]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[7]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[6]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[5]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[4]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[3]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[2]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[1]
+WARNING: [Synth 8-3331] design road has unconnected port pixel_y[0]
+WARNING: [Synth 8-3331] design cursor has unconnected port pause
+WARNING: [Synth 8-3331] design cursor has unconnected port frame_refresh
+WARNING: [Synth 8-3331] design game_over has unconnected port clk
+WARNING: [Synth 8-3331] design game_over has unconnected port reset
+WARNING: [Synth 8-3331] design start_text has unconnected port clk
+WARNING: [Synth 8-3331] design start_text has unconnected port reset
+WARNING: [Synth 8-3331] design speaker has unconnected port clk
+WARNING: [Synth 8-3331] design speaker has unconnected port reset
+WARNING: [Synth 8-3331] design siren2 has unconnected port clk
+WARNING: [Synth 8-3331] design siren2 has unconnected port reset
+WARNING: [Synth 8-3331] design siren1 has unconnected port clk
+WARNING: [Synth 8-3331] design siren1 has unconnected port reset
+WARNING: [Synth 8-3331] design score has unconnected port reset
+WARNING: [Synth 8-3331] design score has unconnected port pause
+WARNING: [Synth 8-3331] design paratitle has unconnected port clk
+WARNING: [Synth 8-3331] design paratitle has unconnected port reset
+WARNING: [Synth 8-3331] design title has unconnected port clk
+WARNING: [Synth 8-3331] design title has unconnected port reset
+WARNING: [Synth 8-3331] design text has unconnected port enter
+WARNING: [Synth 8-3331] design vga_display has unconnected port RClick
+WARNING: [Synth 8-3331] design police_top has unconnected port SO
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 664.813 ; gain = 458.117
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 664.813 ; gain = 458.117
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------------------+---------------+----------------+
+|Module Name | RTL Object                 | Depth x Width | Implemented As | 
++------------+----------------------------+---------------+----------------+
+|font_rom    | addr_reg_reg               | 2048x8        | Block RAM      | 
+|font_rom    | addr_reg_reg_rep           | 2048x1        | Block RAM      | 
+|text        | font_unit/addr_reg_reg     | 2048x8        | Block RAM      | 
+|text        | font_unit/addr_reg_reg_rep | 2048x1        | Block RAM      | 
++------------+----------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (display/yellowlines/\velocity_reg[2] )
+INFO: [Synth 8-3886] merging instance 'display/roads/road_rgb_reg[0]' (FD) to 'display/roads/road_rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'display/roads/road_rgb_reg[1]' (FD) to 'display/roads/road_rgb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'display/texts/text_rgb_reg[1]' (LD) to 'display/texts/text_rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'display/roads/road_rgb_reg[2]' (FD) to 'display/roads/road_rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'display/roads/road_rgb_reg[3]' (FD) to 'display/roads/road_rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'display/roads/road_rgb_reg[4]' (FD) to 'display/roads/road_rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'display/roads/road_rgb_reg[5]' (FD) to 'display/roads/road_rgb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'display/roads/road_rgb_reg[7]' (FD) to 'display/roads/road_rgb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'display/roads/road_rgb_reg[8]' (FD) to 'display/roads/road_rgb_reg[9]'
+WARNING: [Synth 8-3332] Sequential element (text_rgb_reg[1]) is unused and will be removed from module text.
+WARNING: [Synth 8-3332] Sequential element (roads/road_rgb_reg[8]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (roads/road_rgb_reg[7]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (roads/road_rgb_reg[5]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (roads/road_rgb_reg[4]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (roads/road_rgb_reg[3]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (roads/road_rgb_reg[2]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (roads/road_rgb_reg[1]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (roads/road_rgb_reg[0]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (velocity_reg[2]) is unused and will be removed from module yellowline.
+WARNING: [Synth 8-3332] Sequential element (sirens/addr_reg[17]) is unused and will be removed from module police_top.
+WARNING: [Synth 8-3332] Sequential element (sirens/addr_reg[18]) is unused and will be removed from module police_top.
+WARNING: [Synth 8-3332] Sequential element (sirens/addr_reg[19]) is unused and will be removed from module police_top.
+WARNING: [Synth 8-3332] Sequential element (sirens/addr_reg[20]) is unused and will be removed from module police_top.
+WARNING: [Synth 8-3332] Sequential element (velocity_reg[0]) is unused and will be removed from module yellowline.
+WARNING: [Synth 8-3332] Sequential element (people4/V_VELOCITY_reg[0]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (people3/V_VELOCITY_reg[0]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (people2/V_VELOCITY_reg[0]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (people1/V_VELOCITY_reg[0]) is unused and will be removed from module vga_display.
+WARNING: [Synth 8-3332] Sequential element (people0/V_VELOCITY_reg[0]) is unused and will be removed from module vga_display.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (display/cursors/\y_t_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (y_t_reg[9]) is unused and will be removed from module cursor.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 664.813 ; gain = 458.117
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 664.813 ; gain = 458.117
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 673.098 ; gain = 466.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:49 . Memory (MB): peak = 676.113 ; gain = 469.418
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance display/texts/font_unit/addr_reg_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance display/texts/font_unit/addr_reg_reg_rep (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 751.148 ; gain = 544.453
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|police_top  | sirens/cmd_reg[127] | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|police_top  | sirens/cmd_reg[120] | 13     | 2     | YES          | NO                 | YES               | 2      | 0       | 
+|police_top  | sirens/cmd_reg[106] | 8      | 4     | YES          | NO                 | YES               | 4      | 0       | 
+|police_top  | sirens/cmd_reg[56]  | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|police_top  | sirens/cmd_reg[47]  | 18     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|police_top  | sirens/cmd_reg[28]  | 17     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|police_top  | sirens/cmd_reg[10]  | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_1 |         1|
+|2     |blk_mem_gen_2 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |blk_mem_gen_1 |     1|
+|2     |blk_mem_gen_2 |     1|
+|3     |BUFG          |     2|
+|4     |CARRY4        |   323|
+|5     |LUT1          |   447|
+|6     |LUT2          |   569|
+|7     |LUT3          |   234|
+|8     |LUT4          |   415|
+|9     |LUT5          |   323|
+|10    |LUT6          |   546|
+|11    |MUXF7         |    18|
+|12    |RAMB18E1      |     1|
+|13    |RAMB18E1_1    |     1|
+|14    |SRL16E        |    11|
+|15    |FDCE          |    31|
+|16    |FDRE          |   732|
+|17    |FDSE          |    24|
+|18    |LD            |    33|
+|19    |IBUF          |     4|
+|20    |IOBUF         |     2|
+|21    |OBUF          |    21|
++------+--------------+------+
+
+Report Instance Areas: 
++------+---------------------+-----------------------+------+
+|      |Instance             |Module                 |Cells |
++------+---------------------+-----------------------+------+
+|1     |top                  |                       |  3769|
+|2     |  display            |vga_display            |  1973|
+|3     |    cars             |car                    |    67|
+|4     |    cursors          |cursor                 |    59|
+|5     |    people0          |people                 |   310|
+|6     |    people1          |people__parameterized0 |   233|
+|7     |    people2          |people__parameterized1 |   237|
+|8     |    people3          |people__parameterized2 |   233|
+|9     |    people4          |people__parameterized3 |   236|
+|10    |    roads            |road                   |     4|
+|11    |    texts            |text                   |   441|
+|12    |      font_unit      |font_rom               |    13|
+|13    |      nolabel_line32 |time_text              |   224|
+|14    |      nolabel_line33 |score                  |   179|
+|15    |    yellowlines      |yellowline             |   145|
+|16    |  mymouse            |mouse                  |   450|
+|17    |    ps2_transmitter  |ps2_transmitter        |   190|
+|18    |  sirens             |siren                  |   583|
+|19    |    divider          |Divider                |    97|
+|20    |  sounds             |sound                  |    12|
+|21    |  states             |game_state             |   132|
+|22    |  vga                |vga_sync               |   442|
++------+---------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 751.148 ; gain = 544.453
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 58 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 751.148 ; gain = 211.844
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 751.148 ; gain = 544.453
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 364 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 35 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  LD => LDCE: 33 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+154 Infos, 111 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 751.148 ; gain = 519.734
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 751.148 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 07 08:33:03 2020...

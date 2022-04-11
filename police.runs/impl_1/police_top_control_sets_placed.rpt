@@ -1,0 +1,108 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Tue Jan 07 08:34:17 2020
+| Host         : DESKTOP-KDKD7VR running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file police_top_control_sets_placed.rpt
+| Design       : police_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    55 |
+| Unused register locations in slices containing registers |   214 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             178 |           82 |
+| No           | No                    | Yes                    |              11 |            8 |
+| No           | Yes                   | No                     |              51 |           15 |
+| Yes          | No                    | No                     |             159 |           59 |
+| Yes          | No                    | Yes                    |              20 |            6 |
+| Yes          | Yes                   | No                     |             423 |          136 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------+-----------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|                  Clock Signal                  |                    Enable Signal                    |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++------------------------------------------------+-----------------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  clk                                           | sirens/mp3_reset_i_1_n_0                            | RESET_IBUF                                    |                1 |              1 |
+|  clk                                           | sirens/mp3_dcs_i_1_n_0                              | RESET_IBUF                                    |                1 |              1 |
+|  clk                                           | sirens/mp3_cs_i_1_n_0                               | RESET_IBUF                                    |                1 |              1 |
+|  CLK_IBUF_BUFG                                 | sounds/pwm_val_reg0_n_0                             |                                               |                1 |              1 |
+|  clk                                           | sirens/mp3_SI1_out                                  |                                               |                1 |              1 |
+|  clk                                           |                                                     |                                               |                3 |              4 |
+|  CLK_IBUF_BUFG                                 | mymouse/FSM_sequential_next_state[3]_i_1_n_0        |                                               |                3 |              4 |
+|  vga/cnt_h_reg[9]_0[0]                         |                                                     |                                               |                1 |              4 |
+|  CLK_IBUF_BUFG                                 | mymouse/ps2_transmitter/data_count[3]_i_2_n_0       | mymouse/ps2_transmitter/data_count[3]_i_1_n_0 |                2 |              4 |
+|  CLK_IBUF_BUFG                                 | mymouse/y[8]_i_2_n_0                                | mymouse/y[8]_i_1_n_0                          |                3 |              4 |
+|  CLK_IBUF_BUFG                                 | mymouse/x0_0                                        | mymouse/y[9]_i_1_n_0                          |                5 |              6 |
+|  CLK_IBUF_BUFG                                 | mymouse/ps2_transmitter/x_sign_2                    |                                               |                4 |              6 |
+|  display/texts/font_unit/addr_reg_reg_rep_n_15 |                                                     |                                               |                3 |              8 |
+|  CLK_IBUF_BUFG                                 | mymouse/PS2_data_out[7]_i_2_n_0                     | mymouse/PS2_data_out[7]_i_1_n_0               |                3 |              8 |
+|  CLK_IBUF_BUFG                                 | mymouse/x0_0                                        | mymouse/x[8]_i_1_n_0                          |                5 |              8 |
+|  CLK_IBUF_BUFG                                 | mymouse/ps2_transmitter/parallel_data_in[7]_i_1_n_0 |                                               |                2 |              8 |
+|  CLK_IBUF_BUFG                                 | mymouse/ps2_transmitter/E[0]                        |                                               |                2 |              8 |
+|  CLK_IBUF_BUFG                                 | mymouse/ps2_transmitter/deltaX_reg[0][0]            |                                               |                3 |              8 |
+|  CLK_IBUF_BUFG                                 |                                                     | mymouse/y_t_reg[0][0]                         |                5 |              9 |
+|  CLK_IBUF_BUFG                                 |                                                     | mymouse/SR[0]                                 |                2 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people3/people_left[9]_i_1__0_n_0           |                                               |                2 |             10 |
+|  CLK_IBUF_BUFG                                 | mymouse/ps2_transmitter/data_in_buf[9]_i_1_n_0      |                                               |                3 |             10 |
+|  CLK_IBUF_BUFG                                 | display/cars/car_x_l                                | states/wait_start                             |                3 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people0/people_top_reg[9]_1                 | display/yellowlines/y_bias[9]_i_1_n_0         |                4 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people0/sel                                 |                                               |                2 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people2/people_left[9]_i_1__1_n_0           |                                               |                3 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people1/people_left[9]_i_1__2_n_0           |                                               |                2 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people4/people_left[9]_i_1_n_0              |                                               |                2 |             10 |
+|  CLK_IBUF_BUFG                                 | display/texts/nolabel_line32/pass[9]_i_1_n_0        | states/wait_start                             |                3 |             10 |
+|  CLK_IBUF_BUFG                                 | vga/cnt_v0                                          | RESET_IBUF                                    |                3 |             10 |
+|  CLK_IBUF_BUFG                                 | vga/cnt_h_reg[9]_0[0]                               | RESET_IBUF                                    |                3 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people0/people_top_reg[9]_1                 | display/people4/people_top[9]_i_1_n_0         |                4 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people0/people_top_reg[9]_1                 | display/people3/people_top[9]_i_1__3_n_0      |                4 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people0/people_top_reg[9]_1                 | display/people2/people_top[9]_i_1__2_n_0      |                4 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people0/people_top_reg[9]_1                 | display/people1/people_top[9]_i_1__1_n_0      |                4 |             10 |
+|  CLK_IBUF_BUFG                                 | display/people0/people_top_reg[9]_1                 | display/people0/load                          |                4 |             10 |
+|  CLK_IBUF_BUFG                                 |                                                     | RESET_IBUF                                    |                8 |             11 |
+|  CLK_IBUF_BUFG                                 | mymouse/ps2_transmitter/data_out_buf[10]_i_1_n_0    |                                               |                5 |             12 |
+|  CLK_IBUF_BUFG                                 | display/people2/score_reg[11]                       | states/score[11]_i_1_n_0                      |                4 |             12 |
+|  clk                                           | sirens/data[15]_i_2_n_0                             | sirens/data[15]_i_1_n_0                       |                9 |             16 |
+|  CLK_IBUF_BUFG                                 | mymouse/ps2_transmitter/clock_count[15]_i_1_n_0     |                                               |                6 |             16 |
+|  clk                                           | sirens/addr                                         | RESET_IBUF                                    |                5 |             17 |
+|  clk                                           | sirens/cmd_0                                        |                                               |                6 |             22 |
+|  CLK_IBUF_BUFG                                 | display/frame_refresh                               |                                               |               15 |             24 |
+|  vga/E[0]                                      |                                                     |                                               |               11 |             25 |
+|  clk                                           | sirens/cmd_cnt                                      | RESET_IBUF                                    |                8 |             32 |
+|  clk                                           | sirens/cnt                                          | RESET_IBUF                                    |               10 |             32 |
+|  CLK_IBUF_BUFG                                 | display/people2/cnt0_inferred__0_carry__1_n_0       | states/cnt_reg[0]_1                           |                8 |             32 |
+|  CLK_IBUF_BUFG                                 | display/people0/cnt0_inferred__0_carry__1_n_0       | states/clear                                  |                8 |             32 |
+|  CLK_IBUF_BUFG                                 | display/people3/cnt0_inferred__0_carry__1_n_1       | states/cnt_reg[0]_0                           |                8 |             32 |
+|  CLK_IBUF_BUFG                                 | display/people4/cnt0_inferred__0_carry__1_n_0       | states/cnt_reg[0]                             |                8 |             32 |
+|  CLK_IBUF_BUFG                                 |                                                     | sirens/divider/clear                          |                8 |             32 |
+|  CLK_IBUF_BUFG                                 | display/people1/cnt0_inferred__0_carry__1_n_0       | states/cnt_reg[0]_2                           |                8 |             32 |
+|  clk                                           | sirens/cmd_0                                        | RESET_IBUF                                    |                9 |             41 |
+|  CLK_IBUF_BUFG                                 |                                                     |                                               |               64 |            137 |
++------------------------------------------------+-----------------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+
